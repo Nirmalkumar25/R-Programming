@@ -1,0 +1,71 @@
+About
+-----
+R - written by Robert Gentleman and Ross Ihaka.
+R - a language for statistical computing and graphics.
+R - solve statistics, time series, classification and other data science tasks.
+R - an open source programming language for statistical computing.
+R - inspired by S+, it is similar to the S programming.
+
+What we will see
+----------------
+Variable and Data types
+Logical Operators
+Vector, Matrix, Lists and Dataframes
+Functions and Flow control statements
+Dplyr and Tidyr for Data Manipulation
+Ggplot library for Data Visualization
+Times series in R
+
+Variables in R - case sensitive
+--------------
+A variable can be a combination of
+    letters
+    digits
+    periods
+    underscore
+
+Some of the valid Variables              Invalid Variables
+---------------------------              -----------------
+total                                    tot@l
+sum                                      5um
+.count                                   _count
+.count.total                             TRUE
+Var                                      .0ar
+my_string
+
+Built in Functions
+------------------
+a=10
+class() = to find the class of the variable (Ex: 10 - "numeric")
+typeof() =  to find the type of the variable (Ex: 10 - "double")
+print() = print in the console 
+just variable ex:- a = print in the console
+
+Data types in R
+---------------
+
+Logical - TRUE, FALSE
+numeric - 10.5, 7, 855
+Integer - 3L, 40L, 5L
+Complex - 3+2i
+Character - 'a','hello','hi'
+Raw - 'Hello' is stored as 48 65 6c 6c 6f
+
+
+
+n <- 10L  - L denotes the number as Integer
+typeof(n) - Integer
+class(n) -  Integer
+
+n <- 10 - without L it denotes a double or numeric
+typeof(n) - double
+class(n) - numeric
+
+Arithmetic operators are same as python 
+
+logical operators 
+
+and - &
+or - |
+not - !
+
