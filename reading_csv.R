@@ -1,6 +1,6 @@
 start_time<-Sys.time()
 start_time
-df<- read.csv("/Users/apple/Downloads/journey_report_db1.csv")
+df<- read.csv("/Users/apple/Downloads/PayTM.csv")
 # head(df)
 end_time<-Sys.time()
 end_time

@@ -27,3 +27,6 @@ x==y
 x<y
 x<=y
 x>=y
+
+Vectors - A vector is a sequence of data elements of the same datatype
+we use c() function to declare a vector
