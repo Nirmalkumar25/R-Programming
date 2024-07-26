@@ -69,3 +69,16 @@ and - &
 or - |
 not - !
 
+
+Vectors - A vector is a sequence of data elements of the same datatype
+we use c() function to declare a vector
+
+when different classes/datatypes/objects are mixed in a vector, 
+coercion occurs so that every element in the vector is of the same class
+
+This is called IMPLICIT COERCION
+
+EXPLICIT COERCION:
+-----------------
+objects can be explicitly coerced from one class to another using
+as.* functions
