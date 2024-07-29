@@ -111,3 +111,9 @@ All objects need not have attributes, that is some objects does not have attribu
 Ex:- obj <- 1
      attributes(obj) # NULL
 
+List: -> Detailed information given in the list.R file
+-----
+new.list <- list(1,2,3,4)
+res <- new.list(F,F,T,T)
+res # (3,4)
+TRUE or FALSE to the indices of the list, if we provide FALSE in place of index, it will not consider that index and if TRUE in place of index, it will consider it and return the outcome of the index
