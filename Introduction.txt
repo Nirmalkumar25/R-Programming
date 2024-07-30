@@ -69,3 +69,51 @@ and - &
 or - |
 not - !
 
+
+Vectors - A vector is a sequence of data elements of the same datatype
+we use c() function to declare a vector
+
+when different classes/datatypes/objects are mixed in a vector, 
+coercion occurs so that every element in the vector is of the same class
+
+This is called IMPLICIT COERCION
+
+EXPLICIT COERCION:
+-----------------
+objects can be explicitly coerced from one class to another using
+as.* functions
+
+DIFFERENCE BETWEEN typeof and class function
+--------------------------------------------
+typeof -> returns the internal storage mode of an objects
+Ex:- typeof(1.5) -> double -> because this value stored as a double in storage
+class -> returns the object's abstract type and how it will behave in generic functions and methods
+Ex:- class(1.5) -> numeric -> because it comes under the class numeric
+
+Another example
+df <- data.frame(a = 1:3, b = c("A", "B", "C"))
+typeof(df) -> list -> because it is internally list of columns
+class(df) -> data.frame -> higher level abstraction and behaviour in Raw
+
+ATTRIBUTES
+----------
+R objects have attributes (metadata for object)
+R object attributes:
+    names
+    dimensions
+    dimensions[matrices,arrays]
+    class[integer,numeric],
+    length
+    other user-defined attributes
+
+All objects need not have attributes, that is some objects does not have attributes
+
+Ex:- obj <- 1
+     attributes(obj) # NULL
+
+List: -> Detailed information given in the list.R file
+-----
+new.list <- list(1,2,3,4)
+res <- new.list(F,F,T,T)
+res # (3,4)
+TRUE or FALSE to the indices of the list, if we provide FALSE in place of index, it will not consider that index and if TRUE in place of index, it will consider it and return the outcome of the index
