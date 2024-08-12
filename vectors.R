@@ -5,10 +5,28 @@
 # character > numeric > logical - the order of power of conversion
 # vector() - function to initialize the vector
 # as.factor() -> factor vector function
-
+# ------------------------------------------------------------------
 vec <- c("I","am","a","R","Programmer")
 vec
 typeof(vec) #character
+
+# Another method to declare vector
+# --------------------------------
+vec_seq <- seq(1,20)
+vec_seq #  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+
+vec0 <- 1:10
+vec0 # 1  2  3  4  5  6  7  8  9 10
+
+odd_value <- seq(1,10,2)
+odd_value # 1 3 5 7 9
+
+even_value <- seq(2,10,2)
+even_value # 2  4  6  8 10
+
+# Returns the 
+by_select <- seq(from = 21, by = 2, length.out = 10)
+by_select # 21 23 25 27 29 31 33 35 37 39
 
 print("IMPLICIT COERCION FOLLOWS - NUMERIC TO CHARACTER")
 print(strrep("*", 50))
@@ -82,4 +100,32 @@ print("ATTRIBUTES")
 print(strrep("*",10))
 obj <- 1
 attributes(obj) # NULL
+
+
+# Naming the vector by directly
+# -----------------------------
+temperature <- c(71,56,78,67,58)
+temperature # 71 56 78 67 58
+
+names(temperature) <- c("Mon", "Tue", "Wed", "Thurs", "Fri")
+temperature
+#  Mon   Tue   Wed Thurs   Fri 
+#    71    56    78    67    58 
+
+# Naming the vector using variable
+# --------------------------------
+days <- c("Mon", "Tue", "Wed", "Thurs", "Fri", "Sat", "Sun")
+temp <- c(71,56,78,67,58,79,80)
+names(temp) <- days
+temp
+#  Mon   Tue   Wed Thurs   Fri   Sat   Sun 
+#    71    56    78    67    58    79    80 
+
+# Naming the vector using paste0 method
+# -------------------------------------
+price <- seq(100,220,20)
+names(price) <- paste0('p',1:7)
+price
+# p1  p2  p3  p4  p5  p6  p7 
+# 100 120 140 160 180 200 220 
 
