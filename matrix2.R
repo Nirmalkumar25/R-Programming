@@ -184,6 +184,25 @@ apply(student, 2, mean, na.rm = TRUE)
 #      Phy     Chem      Bio    Maths
 # 50.00000 47.00000 68.50000 51.33333
 
-apply(student, 2, sum, na.rm = TRUE)
-
+print("SUM ON ROW")
 apply(student, 1, sum, na.rm = TRUE)
+
+#  Manoj   Dravid Sudhakar  Gopi
+#  90      236       95      208
+
+pass_score <- c(35, 35, 35, 35)
+gopi_passed <- (student[c("Gopi"), ] > pass_score)
+gopi_passed
+
+#  Phy  Chem   Bio Maths
+#  TRUE  TRUE    NA  TRUE
+
+sum(gopi_passed, na.rm = TRUE) # 3
+
+manoj_passed <- (student[c("Manoj"), ] > pass_score)
+manoj_passed
+
+# Phy  Chem   Bio Maths
+# FALSE FALSE    NA  TRUE
+
+sum(manoj_passed, na.rm = TRUE) # 1
