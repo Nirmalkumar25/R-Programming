@@ -95,3 +95,26 @@ std.details[desc.order.by.age,]
 # 5 Venkatajalapathy  24      TRUE          99.0    BIOTECH 765           FALSE
 
 
+
+sort(std.details$age) # 24 24 25 26 26
+std.details
+ranks <- order(std.details$age)
+ranks # 1 5 2 3 4
+
+std.details[ranks,]
+
+#               name age graduated percent.in.12 department  id is_absent_today
+# 1           Sundar  24      TRUE          76.5         IT 123            TRUE
+# 5 Venkatajalapathy  24      TRUE          99.0    BIOTECH 765           FALSE
+# 2          Azhagan  25     FALSE          84.6        CSE 456           FALSE
+# 3          Murugan  26     FALSE          96.8        EEE 789           FALSE
+# 4        Ganapathy  26     FALSE          57.2        ECE  98            TRUE
+
+std.details[order(std.details$age,decreasing=TRUE),]
+
+#               name age graduated percent.in.12 department  id is_absent_today
+# 3          Murugan  26     FALSE          96.8        EEE 789           FALSE
+# 4        Ganapathy  26     FALSE          57.2        ECE  98            TRUE
+# 2          Azhagan  25     FALSE          84.6        CSE 456           FALSE
+# 1           Sundar  24      TRUE          76.5         IT 123            TRUE
+# 5 Venkatajalapathy  24      TRUE          99.0    BIOTECH 765           FALSE
